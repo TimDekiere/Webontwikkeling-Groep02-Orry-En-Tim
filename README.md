@@ -19,7 +19,7 @@ To implement our code, simply copy the img and lib folder into the folder of you
 
 Besides the copying there's one very important change you will have to make: the site you get your weather information from requires developers to create an account in order to be able to receive the forecast you want. This means you will have to create a new account on [www.developer.forecast.io](https://developer.forecast.io/). When you do this, you will get an API key which allows you to use their content. You can choose a free account for 1000 uses per day or pay for more uses if you have a popular website. Paste your personal api key in the weather.js code, where the api key is initialized: `var apiKey = '(your personal key)';`
 
-An example of a working impelementation of our code can be found [here](http://orry.verpoort.be/weer/).
+An example of a working impelementation of our code can be found [here](http://orry.verpoort.be/weer37/).
 
 Feel free to edit the code to to make sure it fits into your web page!
 
