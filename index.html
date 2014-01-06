@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Forecast API</title>
+    
+    <link rel="stylesheet" type="text/css" href="lib/cssMeyerwebCssReset.css">
+	<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,800|Tulpen+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="lib/tekst.css">
+    <link rel="stylesheet" type="text/css" href="lib/main.css">
+    
+    <script src="lib/jquery-1.10.0.min.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+	<script src="lib/weather.js"></script>
+    <script>
+		var geocoder;
+		$(document).ready( function() {
+            console.log("Check");
+			$("#weather").hide();
+			getLocation();
+			initButtons();
+        });
+		function initButtons() {
+			$(".weather").click(weatherPopUp);
+		}
+		function weatherPopUp() {
+			var position = $(this).offset().left - $(window).scrollLeft() - 252;
+			$("#weather").css("left", position);
+			$("#weather").stop().fadeToggle(500);
+		}
+	</script>
+    <style>
+	</style>
+</head>
+<body>
+
+<section id="statusWrapper">
+	<div id="status">
+    	<h2 class="titelStatus">Weather on webpage - Tim Dekiere & Orry Verpoort</h2>-
+    	<img src="img/iconWeather.png" class="statusIcon weather">
+    </div>
+</section>
+
+<section id="info">
+    <div id="weather">
+	</div>
+</section>
+
+<p id="demo"></p>
+</body>
+</html>

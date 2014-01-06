@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* Orry Verpoort CSS - Forecast API */
+
+/* Main text
+----------------------------------------------------------------------------------------------------------------------------------------- */
+
+h1, h2, h3 {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: #ffffff;
+	display: inline-block;
+}
+	h1 { font-size: 32px; font-weight: 400; }
+	h2, h2 { font-size: 24px; font-weight: 200; }
+
+p, a, span {
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+
+/* index text
+----------------------------------------------------------------------------------------------------------------------------------------- */
+
+h2.titelStatus {
+	margin: 4px 0;
+}
+
+h1.textWeatherMain {
+	font-family: 'Tulpen One', sans-serif;
+	font-size: 124px;
+}
+p.textWeatherMinMax {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+
+/* General Classes
+----------------------------------------------------------------------------------------------------------------------------------------- */
+
+.whiteText { color: #ffffff; }
+.alignRight { text-align: right; }
